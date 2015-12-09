@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3801F6171C18C167007D8E87 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3801F6161C18C167007D8E87 /* Sparkle.framework */; };
+		3801F6181C18C22A007D8E87 /* Sparkle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 3801F6161C18C167007D8E87 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3A335FD616B098EB0086C243 /* NSString+SymlinksAndAliases.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A335FD516B098EB0086C243 /* NSString+SymlinksAndAliases.m */; };
 		3A4C775F13A51041000EDD78 /* ToggleEditLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4C775E13A51041000EDD78 /* ToggleEditLabel.m */; };
 		3A4C776313A54D69000EDD78 /* skipLeftTemplate.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A4C776113A54D69000EDD78 /* skipLeftTemplate.png */; };
@@ -82,7 +84,6 @@
 		3A7A6B3D139AB990006A8B4A /* libfreetype.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7A6B3B139AB990006A8B4A /* libfreetype.6.dylib */; };
 		3A7A6B54139ABD51006A8B4A /* MPlayer OSX Help in Resources */ = {isa = PBXBuildFile; fileRef = 3A7A6B52139ABD51006A8B4A /* MPlayer OSX Help */; };
 		3A7A6B56139ABD6C006A8B4A /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 3A7A6B55139ABD6C006A8B4A /* fonts */; };
-		3A7A6B58139ABDCB006A8B4A /* Sparkle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7A6A70139AB735006A8B4A /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		3A7A6B7B139ABE22006A8B4A /* mpextended.mpBinaries in Copy Binaries */ = {isa = PBXBuildFile; fileRef = 3A7A6B7A139ABE20006A8B4A /* mpextended.mpBinaries */; };
 		3AC9A6F2139BFFCB001A3429 /* fc_aslider_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AC9A694139BFFCB001A3429 /* fc_aslider_bar.png */; };
 		3AC9A6F3139BFFCB001A3429 /* fc_aslider_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AC9A695139BFFCB001A3429 /* fc_aslider_icon.png */; };
@@ -207,7 +208,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3A7A6B58139ABDCB006A8B4A /* Sparkle.framework in Copy Frameworks */,
+				3801F6181C18C22A007D8E87 /* Sparkle.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,6 +227,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3801F6161C18C167007D8E87 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		3A335FD416B098EB0086C243 /* NSString+SymlinksAndAliases.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SymlinksAndAliases.h"; sourceTree = "<group>"; };
 		3A335FD516B098EB0086C243 /* NSString+SymlinksAndAliases.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SymlinksAndAliases.m"; sourceTree = "<group>"; };
 		3A4C775D13A51041000EDD78 /* ToggleEditLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToggleEditLabel.h; sourceTree = "<group>"; };
@@ -478,6 +480,7 @@
 				3A5CE3611699F88100AA45AB /* IOKit.framework in Frameworks */,
 				3A5CE3631699F88600AA45AB /* Security.framework in Frameworks */,
 				3A5CE3651699F88C00AA45AB /* CoreAudio.framework in Frameworks */,
+				3801F6171C18C167007D8E87 /* Sparkle.framework in Frameworks */,
 				3A5CE3671699F89300AA45AB /* ExceptionHandling.framework in Frameworks */,
 				3ACDFE3F139AB3D900275362 /* Cocoa.framework in Frameworks */,
 				3A7A6A71139AB735006A8B4A /* Sparkle.framework in Frameworks */,
@@ -934,6 +937,7 @@
 				3A5CE3621699F88600AA45AB /* Security.framework */,
 				3A5CE3601699F88100AA45AB /* IOKit.framework */,
 				3A7A6B3A139AB990006A8B4A /* libfontconfig.1.dylib */,
+				3801F6161C18C167007D8E87 /* Sparkle.framework */,
 				3A7A6B3B139AB990006A8B4A /* libfreetype.6.dylib */,
 				3A7A6A70139AB735006A8B4A /* Sparkle.framework */,
 				3ACDFE3E139AB3D900275362 /* Cocoa.framework */,
@@ -984,7 +988,7 @@
 				LastUpgradeCheck = 0710;
 				TargetAttributes = {
 					3ACDFE39139AB3D900275362 = {
-						DevelopmentTeam = JJ2T7YBNB4;
+						DevelopmentTeam = A348NLUJNU;
 					};
 				};
 			};
@@ -1304,12 +1308,14 @@
 		3ACDFE56139AB3D900275362 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					frameworks,
+					"$(PROJECT_DIR)",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1322,6 +1328,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = source/contrib/headers;
 				INFOPLIST_FILE = configuration/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					binaries/mpextended.mpBinaries/Contents/MacOS/lib,
@@ -1341,13 +1348,15 @@
 		3ACDFE57139AB3D900275362 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Developer ID Application";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					frameworks,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "source/MPlayer OSX_Prefix.pch";
@@ -1356,6 +1365,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = source/contrib/headers;
 				INFOPLIST_FILE = configuration/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					binaries/mpextended.mpBinaries/Contents/MacOS/lib,
